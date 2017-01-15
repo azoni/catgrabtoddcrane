@@ -13,3 +13,6 @@ C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Samples\Managed\BodyBasics-WPF\
 C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Samples\Managed\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.csproj.GenerateResource.Cache
 C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Samples\Managed\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
 C:\Program Files\Microsoft SDKs\Kinect\v2.0_1409\Samples\Managed\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb
+C:\Users\Gabriel\Documents\microHack\catgrabtoddcrane\BodyBasics-WPF\bin\AnyCPU\Debug\BodyBasics-WPF.exe.config
+C:\Users\Gabriel\Documents\microHack\catgrabtoddcrane\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.exe
+C:\Users\Gabriel\Documents\microHack\catgrabtoddcrane\BodyBasics-WPF\obj\Debug\BodyBasics-WPF.pdb

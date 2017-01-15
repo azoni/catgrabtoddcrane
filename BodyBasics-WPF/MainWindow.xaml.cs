@@ -10,15 +10,13 @@ namespace Microsoft.Samples.Kinect.BodyBasics
     using System.Collections.Generic;
     using System.ComponentModel;
     using System.Diagnostics;
+    using System.Drawing;
     using System.Globalization;
     using System.IO;
     using System.Windows;
     using System.Windows.Media;
     using System.Windows.Media.Imaging;
     using Microsoft.Kinect;
-    using Microsoft.Azure; // Namespace for CloudConfigurationManager
-    using Microsoft.WindowsAzure.Storage; // Namespace for CloudStorageAccount
-    using Microsoft.WindowsAzure.Storage.Blob; // Namespace for Blob storage types
     /// <summary>
     /// Interaction logic for MainWindow
     /// </summary>
@@ -364,7 +362,18 @@ namespace Microsoft.Samples.Kinect.BodyBasics
                         }
                     }
 
+                    // Create a 100 by 100 image with an upper-left point of (75,75). 
+                    ImageDrawing kitty = new ImageDrawing();
+                    kitty.Rect = new Rect(75, 75, 100, 100);
+                    kitty.ImageSource = new BitmapImage(
+                        new Uri("https://i.ytimg.com/vi/sfA0tZgtSeg/maxresdefault.jpg", UriKind.Relative));
 
+                    this.drawingGroup.Children.Add(kitty);
+
+                    DrawingImage drawingImageSource = new DrawingImage(this.drawingGroup);
+
+                    // Freeze the DrawingImage for performance benefits.
+                    drawingImageSource.Freeze();
 
                     // prevent drawing outside of our render area
                     this.drawingGroup.ClipGeometry = new RectangleGeometry(new Rect(0.0, 0.0, this.displayWidth, this.displayHeight));
